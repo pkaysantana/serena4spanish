@@ -65,7 +65,7 @@ export function Flashcards() {
     <div className="min-h-screen w-full flex flex-col items-center">
       <header className="w-full px-6 pt-5 pb-4 flex items-center justify-between border-b border-border sticky top-0 z-10 bg-background">
         <div className="font-display text-xl tracking-tight text-accent">
-          lexi<span className="text-foreground italic">.</span>
+          flash<span className="text-foreground italic">cards</span>
         </div>
         <div className="flex items-center gap-2.5">
           <span className="text-xs text-muted-foreground">
