@@ -1,0 +1,146 @@
+export type Flashcard = {
+  spanish: string;
+  english: string;
+  category: string;
+};
+
+export const CATEGORIES = [
+  "All",
+  "Greetings",
+  "Food",
+  "Travel",
+  "Numbers",
+  "Family",
+  "Verbs",
+  "Time",
+  "Places",
+  "Feelings",
+];
+
+export const FLASHCARDS: Flashcard[] = [
+  // Greetings
+  { spanish: "Hola", english: "Hello", category: "Greetings" },
+  { spanish: "Buenos días", english: "Good morning", category: "Greetings" },
+  { spanish: "Buenas tardes", english: "Good afternoon", category: "Greetings" },
+  { spanish: "Buenas noches", english: "Good night", category: "Greetings" },
+  { spanish: "¿Cómo estás?", english: "How are you?", category: "Greetings" },
+  { spanish: "Mucho gusto", english: "Nice to meet you", category: "Greetings" },
+  { spanish: "Adiós", english: "Goodbye", category: "Greetings" },
+  { spanish: "Hasta luego", english: "See you later", category: "Greetings" },
+  { spanish: "Por favor", english: "Please", category: "Greetings" },
+  { spanish: "Gracias", english: "Thank you", category: "Greetings" },
+  { spanish: "De nada", english: "You're welcome", category: "Greetings" },
+  { spanish: "Lo siento", english: "I'm sorry", category: "Greetings" },
+
+  // Food
+  { spanish: "El pan", english: "Bread", category: "Food" },
+  { spanish: "El agua", english: "Water", category: "Food" },
+  { spanish: "La leche", english: "Milk", category: "Food" },
+  { spanish: "El queso", english: "Cheese", category: "Food" },
+  { spanish: "La manzana", english: "Apple", category: "Food" },
+  { spanish: "El pollo", english: "Chicken", category: "Food" },
+  { spanish: "El arroz", english: "Rice", category: "Food" },
+  { spanish: "El café", english: "Coffee", category: "Food" },
+  { spanish: "La cerveza", english: "Beer", category: "Food" },
+  { spanish: "El vino", english: "Wine", category: "Food" },
+  { spanish: "La sal", english: "Salt", category: "Food" },
+  { spanish: "El azúcar", english: "Sugar", category: "Food" },
+
+  // Travel
+  { spanish: "El aeropuerto", english: "Airport", category: "Travel" },
+  { spanish: "El hotel", english: "Hotel", category: "Travel" },
+  { spanish: "La estación", english: "Station", category: "Travel" },
+  { spanish: "El tren", english: "Train", category: "Travel" },
+  { spanish: "El autobús", english: "Bus", category: "Travel" },
+  { spanish: "El coche", english: "Car", category: "Travel" },
+  { spanish: "El avión", english: "Airplane", category: "Travel" },
+  { spanish: "El billete", english: "Ticket", category: "Travel" },
+  { spanish: "La maleta", english: "Suitcase", category: "Travel" },
+  { spanish: "El pasaporte", english: "Passport", category: "Travel" },
+  { spanish: "El mapa", english: "Map", category: "Travel" },
+
+  // Numbers
+  { spanish: "Uno", english: "One", category: "Numbers" },
+  { spanish: "Dos", english: "Two", category: "Numbers" },
+  { spanish: "Tres", english: "Three", category: "Numbers" },
+  { spanish: "Cuatro", english: "Four", category: "Numbers" },
+  { spanish: "Cinco", english: "Five", category: "Numbers" },
+  { spanish: "Seis", english: "Six", category: "Numbers" },
+  { spanish: "Siete", english: "Seven", category: "Numbers" },
+  { spanish: "Ocho", english: "Eight", category: "Numbers" },
+  { spanish: "Nueve", english: "Nine", category: "Numbers" },
+  { spanish: "Diez", english: "Ten", category: "Numbers" },
+  { spanish: "Cien", english: "One hundred", category: "Numbers" },
+  { spanish: "Mil", english: "One thousand", category: "Numbers" },
+
+  // Family
+  { spanish: "La madre", english: "Mother", category: "Family" },
+  { spanish: "El padre", english: "Father", category: "Family" },
+  { spanish: "El hermano", english: "Brother", category: "Family" },
+  { spanish: "La hermana", english: "Sister", category: "Family" },
+  { spanish: "El hijo", english: "Son", category: "Family" },
+  { spanish: "La hija", english: "Daughter", category: "Family" },
+  { spanish: "El abuelo", english: "Grandfather", category: "Family" },
+  { spanish: "La abuela", english: "Grandmother", category: "Family" },
+  { spanish: "El tío", english: "Uncle", category: "Family" },
+  { spanish: "La tía", english: "Aunt", category: "Family" },
+  { spanish: "El amigo", english: "Friend (m)", category: "Family" },
+  { spanish: "La amiga", english: "Friend (f)", category: "Family" },
+
+  // Verbs
+  { spanish: "Ser", english: "To be (permanent)", category: "Verbs" },
+  { spanish: "Estar", english: "To be (temporary)", category: "Verbs" },
+  { spanish: "Tener", english: "To have", category: "Verbs" },
+  { spanish: "Hacer", english: "To do / make", category: "Verbs" },
+  { spanish: "Ir", english: "To go", category: "Verbs" },
+  { spanish: "Comer", english: "To eat", category: "Verbs" },
+  { spanish: "Beber", english: "To drink", category: "Verbs" },
+  { spanish: "Hablar", english: "To speak", category: "Verbs" },
+  { spanish: "Vivir", english: "To live", category: "Verbs" },
+  { spanish: "Querer", english: "To want / love", category: "Verbs" },
+  { spanish: "Poder", english: "To be able to", category: "Verbs" },
+  { spanish: "Saber", english: "To know", category: "Verbs" },
+  { spanish: "Ver", english: "To see", category: "Verbs" },
+  { spanish: "Dormir", english: "To sleep", category: "Verbs" },
+
+  // Time
+  { spanish: "Hoy", english: "Today", category: "Time" },
+  { spanish: "Mañana", english: "Tomorrow", category: "Time" },
+  { spanish: "Ayer", english: "Yesterday", category: "Time" },
+  { spanish: "Ahora", english: "Now", category: "Time" },
+  { spanish: "Siempre", english: "Always", category: "Time" },
+  { spanish: "Nunca", english: "Never", category: "Time" },
+  { spanish: "El lunes", english: "Monday", category: "Time" },
+  { spanish: "El martes", english: "Tuesday", category: "Time" },
+  { spanish: "El miércoles", english: "Wednesday", category: "Time" },
+  { spanish: "El jueves", english: "Thursday", category: "Time" },
+  { spanish: "El viernes", english: "Friday", category: "Time" },
+  { spanish: "El sábado", english: "Saturday", category: "Time" },
+  { spanish: "El domingo", english: "Sunday", category: "Time" },
+
+  // Places
+  { spanish: "La casa", english: "House", category: "Places" },
+  { spanish: "La escuela", english: "School", category: "Places" },
+  { spanish: "El trabajo", english: "Work", category: "Places" },
+  { spanish: "El mercado", english: "Market", category: "Places" },
+  { spanish: "La playa", english: "Beach", category: "Places" },
+  { spanish: "La ciudad", english: "City", category: "Places" },
+  { spanish: "El parque", english: "Park", category: "Places" },
+  { spanish: "El restaurante", english: "Restaurant", category: "Places" },
+  { spanish: "La tienda", english: "Store", category: "Places" },
+  { spanish: "El banco", english: "Bank", category: "Places" },
+  { spanish: "El hospital", english: "Hospital", category: "Places" },
+
+  // Feelings
+  { spanish: "Feliz", english: "Happy", category: "Feelings" },
+  { spanish: "Triste", english: "Sad", category: "Feelings" },
+  { spanish: "Cansado", english: "Tired", category: "Feelings" },
+  { spanish: "Enojado", english: "Angry", category: "Feelings" },
+  { spanish: "Enamorado", english: "In love", category: "Feelings" },
+  { spanish: "Aburrido", english: "Bored", category: "Feelings" },
+  { spanish: "Emocionado", english: "Excited", category: "Feelings" },
+  { spanish: "Nervioso", english: "Nervous", category: "Feelings" },
+  { spanish: "Tranquilo", english: "Calm", category: "Feelings" },
+  { spanish: "Hambriento", english: "Hungry", category: "Feelings" },
+  { spanish: "Sediento", english: "Thirsty", category: "Feelings" },
+];
