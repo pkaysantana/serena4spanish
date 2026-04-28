@@ -111,10 +111,10 @@ export function Flashcards() {
                 {/* Front */}
                 <div className="absolute inset-0 min-h-[260px] rounded-[20px] [backface-visibility:hidden] flex flex-col items-center justify-center p-8 border border-border bg-card-front">
                   <span className="text-[11px] font-medium tracking-[0.1em] uppercase text-muted-foreground mb-5">
-                    Spanish
+                    {card.direction === "es-en" ? "Spanish" : "English"}
                   </span>
                   <h2 className="font-display text-[1.6rem] text-center leading-snug">
-                    {card.spanish}
+                    {card.direction === "es-en" ? card.spanish : card.english}
                   </h2>
                   <span className="text-[11px] text-accent mt-3 opacity-80">{card.category}</span>
                   <span className="text-xs text-muted-foreground mt-4 opacity-60">
@@ -127,10 +127,10 @@ export function Flashcards() {
                   style={{ transform: "rotateY(180deg)" }}
                 >
                   <span className="text-[11px] font-medium tracking-[0.1em] uppercase text-muted-foreground mb-5">
-                    English
+                    {card.direction === "es-en" ? "English" : "Spanish"}
                   </span>
                   <h2 className="font-display text-[1.5rem] text-center leading-snug text-accent-2">
-                    {card.english}
+                    {card.direction === "es-en" ? card.english : card.spanish}
                   </h2>
                   <span className="text-[11px] text-accent mt-3 opacity-80">{card.category}</span>
                   <span className="text-xs text-muted-foreground mt-4 opacity-60">

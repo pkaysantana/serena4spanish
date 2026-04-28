@@ -2,6 +2,7 @@ export type Flashcard = {
   spanish: string;
   english: string;
   category: string;
+  direction: "es-en" | "en-es";
 };
 
 export const CATEGORIES = [
@@ -18,7 +19,7 @@ export const CATEGORIES = [
   "Opinion Phrases",
 ];
 
-export const FLASHCARDS: Flashcard[] = [
+const BASE_CARDS: Omit<Flashcard, "direction">[] = [
   // Globalisation: Origins
   { spanish: "la globalización", english: "globalisation", category: "Globalisation: Origins" },
   { spanish: "el comercio internacional", english: "international trade", category: "Globalisation: Origins" },
@@ -144,4 +145,9 @@ export const FLASHCARDS: Flashcard[] = [
   { spanish: "es importante que (+ subj.)", english: "it is important that...", category: "Opinion Phrases" },
   { spanish: "no cabe duda de que", english: "there is no doubt that", category: "Opinion Phrases" },
   { spanish: "en conclusión", english: "in conclusion", category: "Opinion Phrases" },
+];
+
+export const FLASHCARDS: Flashcard[] = [
+  ...BASE_CARDS.map((c) => ({ ...c, direction: "es-en" as const })),
+  ...BASE_CARDS.map((c) => ({ ...c, direction: "en-es" as const })),
 ];
